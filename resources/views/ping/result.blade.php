@@ -11,7 +11,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container mt-5">
                 @if (isset($output))
-                    <h2>Ping Results for {{ $host }}:</h2>
+                    <h2 class="display-4">Ping Results for {{ $host }}:</h2>
                     <pre class="card-text">{{ implode("\n", $output) }}</pre>
                 @elseif (isset($result) && $result !== 0)
                     <p class="card-text">Ping request failed.</p>

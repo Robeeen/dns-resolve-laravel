@@ -10,7 +10,7 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container mt-5">
-                <h1>Ping Utility</h1>
+                <h1 class="display-4">Ping Utility</h1>
                 <form action="{{ route('ping.ping') }}" method="post" class="mt-4">
                     @csrf
                     <div style="margin-bottom: 15px;">
