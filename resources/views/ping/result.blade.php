@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Ping Utility </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gray-100 p-6">
-    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-        <div class="md:flex">
-            <div class="p-8">
-                
-
+<body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container mt-5">
                 @if (isset($output))
-                    <h2 class="mt-4 text-lg leading-tight font-medium text-black">Ping Results for {{ $host }}:</h2>
-                    <pre class="bg-gray-100 p-4 rounded-md">{{ implode("\n", $output) }}</pre>
+                    <h2>Ping Results for {{ $host }}:</h2>
+                    <pre class="card-text">{{ implode("\n", $output) }}</pre>
                 @elseif (isset($result) && $result !== 0)
-                    <p class="mt-4 text-red-500">Ping request failed.</p>
-                @endif
-            </div>
+                    <p class="card-text">Ping request failed.</p>
+                @endif                
                 <a href="/ping" class="btn btn-primary mb-3">Back</a>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
