@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNS Results for {{ $domain }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="jumbotron jumbotron-fluid">
+
     <div class="container mt-5">
         <h1>DNS Results for {{ $domain }}</h1>
-        <br>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -17,7 +20,7 @@
                     <th>Host</th>
                     <th>TTL</th>
                     <th>Class</th>
-                    <th>Data</th>
+                    <th>IP Address</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,7 +40,9 @@
             </tbody>
         </table>
         
-        <a href="/" class="btn btn-secondary mb-3">Back</a>
+        <a href="/" class="btn btn-primary mb-3">Back</a>
     </div>
+</div>
+</div>
 </body>
 </html>
