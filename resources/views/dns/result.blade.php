@@ -9,7 +9,7 @@
 <body>
     <div class="container mt-5">
         <h1>DNS Results for {{ $domain }}</h1>
-        <a href="/" class="btn btn-secondary mb-3">Back</a>
+        <br>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -21,16 +21,23 @@
                 </tr>
             </thead>
             <tbody>
+                @if($dnsRecords)
                 @foreach($dnsRecords as $record)
                 <tr>
                     <td>{{ $record['type'] }}</td>
                     <td>{{ $record['host'] }}</td>
                     <td>{{ $record['ttl'] }}</td>
                     <td>{{ $record['class'] }}</td>
+                    <td>{{ $record['ip'] }}</td>
                 </tr>
                 @endforeach
+                @else
+                     DNS not found                
+                @endif
             </tbody>
         </table>
+        
+        <a href="/" class="btn btn-secondary mb-3">Back</a>
     </div>
 </body>
 </html>

@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 class DNSController extends Controller
@@ -17,7 +16,7 @@ class DNSController extends Controller
 
         $domain = parse_url($request->input('domain'), PHP_URL_HOST);
 
-        $dnsRecords = dns_get_record($domain, DNS_ALL);
+        $dnsRecords = dns_get_record($domain, DNS_A);
 
         return view('dns.result', [
             'dnsRecords' => $dnsRecords,

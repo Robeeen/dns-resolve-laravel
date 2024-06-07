@@ -12,8 +12,8 @@
         <form action="/resolve" method="POST">
             @csrf
             <div class="mb-3">
-                <label for="domain" class="form-label">Domain</label>
-                <input type="text" class="form-control" id="domain" name="domain" required>
+                <label for="domain" class="form-label">Type FQDN Domain</label>
+                <input type="url" class="form-control" id="domain" name="domain" required>
             </div>
             <button type="submit" class="btn btn-primary">Resolve</button>
         </form>
