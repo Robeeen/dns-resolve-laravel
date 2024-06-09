@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DNSController;
 use App\Http\Controllers\PingController;
+use App\Http\Controllers\TraceController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -10,8 +11,12 @@ Route::get('/', function () {
 
 //Route for DNS resolving
 Route::get('/dns', [DNSController::class, 'index']);
-Route::post('/resolve', [DNSController::class, 'resolve']);
+Route::post('/resolve', [DNSController::class, 'resolve'])->name('dns.dns');
 
-//Route for Ping Results
+// //Route for Ping Results
 Route::get('/ping', [PingController::class, 'index']);
-Route::post('/resolve', [PingController::class, 'resolve'])->name('ping.ping');
+Route::post('/resolve1', [PingController::class, 'resolve1'])->name('ping.ping');
+
+//Route for Tracert Results
+Route::get('/tracert', [TraceController::class, 'index']);
+Route::post('/resolve2', [TraceController::class, 'resolve2'])->name('tracert.trace');

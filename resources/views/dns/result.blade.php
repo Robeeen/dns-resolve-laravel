@@ -40,7 +40,7 @@
             </tbody>
         </table>
         
-        <a href="/" class="btn btn-primary mb-3">Back</a>
+        <a href="/dns" class="btn btn-primary mb-3">Back</a>
     </div>
 </div>
 </div>

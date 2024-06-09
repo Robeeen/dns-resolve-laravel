@@ -9,7 +9,7 @@ class PingController extends Controller
     public function index(){
         return view('ping.index');
     }
-    public function resolve(Request $request){
+    public function resolve1(Request $request){
         $request->validate([
             'host' => 'required | string',
         ]);
