@@ -17,7 +17,8 @@
                 <p><strong>Location:</strong> {{ $ipInfo['loc'] }}</p>
                 <p><strong>Organization:</strong> {{ $ipInfo['org'] }}</p>
                 <p><strong>Timezone:</strong> {{ $ipInfo['timezone'] }}</p>         
-                <a href="/tracert" class="btn btn-primary mb-3">Back to Home</a>
+                <a href="/tracert" class="btn btn-primary mb-3">Back to Tracert</a>
+                <a href="/" class="btn btn-primary mb-3">Back to Home</a>
             </div>
         </div>
     </body>

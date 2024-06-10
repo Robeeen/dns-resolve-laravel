@@ -15,9 +15,10 @@
                     @csrf
                     <div style="margin-bottom: 15px;">
                     <label for="host" class="form-label">Enter Real IP Address Only:</label>
-                    <input type="text" id="host" name="host" class="form-control" required>
+                    <input required pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$" id="host" name="host" class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-5" >Trace Route It</button>                    
+                    <button type="submit" class="btn btn-primary mt-5" >Trace Route It</button>   
+                    <a href="/" class="btn btn-primary mb-3">Back to Home</a>                 
                 </form>  {{--var_dump(openssl_get_cert_locations());--}}
             </div>
         </div>

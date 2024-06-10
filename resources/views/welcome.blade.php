@@ -22,17 +22,17 @@
 
         <main>
             <div class="short">
-                <h3>A good man human</h3>
+                <h3>Ping Utility</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure architecto at. Soluta itaque libero id! Ipsam temporibus libero aut, quasi suscipit molestiae minima ducimus fuga quos hic, earum maiores.</p>
-                <a href="">Click to find</a>                
+                <a href="/ping">Click To Ping</a>                
             </div>
             <div class="tall">
                 <img src="img/1.png" alt="candav" />
             </div>
             <div class="short">
-                <h3>History of the Truth</h3>
+                <h3>DNS A Record Lookup</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure architecto at. Soluta itaque libero id! Ipsam temporibus libero aut, quasi suscipit molestiae minima ducimus fuga quos hic, earum maiores.</p>
-                <a href="">Click to find</a>                
+                <a href="/dns">Click to Lookup</a>                
             </div>
             <div class="tall">
                 <img src="img/2.png" alt="canvas image" />
@@ -41,11 +41,9 @@
                 <img src="img/3.png" alt="canvas image" />
             </div>
             <div class="short">
-                <h3>Moral Story of Luman Sole</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p>Minima iure architecto at. Soluta itaque libero id! Ipsam</p>
+                <h3>Trace IP Address</h3>
                 <p>temporibus libero aut, quasi suscipit molestiae minima ducimus fuga quos hic, earum maiores.</p>
-                <a href="">Click to find</a>                
+                <a href="/tracert">Click to Trace</a>                
             </div>
             <div class="tall">
                 <img src="img/3.png" alt="canvas image" />
