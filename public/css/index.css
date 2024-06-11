@@ -74,6 +74,13 @@ footer{
     padding: 20px;
     font-size: 13px;
 }
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
 @media screen and (max-width: 900px) {
     main{
         grid-template-columns: repeat(2, 1fr);
